@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Water Quality</title>
+     <link rel="stylesheet" href="../static/style.css">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script src="https://kit.fontawesome.com/a46b7b6629.js" crossorigin="anonymous"></script>
+
+     <style>
+          body,html{
+               height:100%;
+               width: 100%;
+               margin:0;
+               background-position: center;
+               background-size: 100% 100%;
+               background-repeat: no-repeat;
+               background-image: url(../static/image/giot-nuoc.jpg); 
+               /* background-color: #F5F5F5; */
+          }
+     </style>
+</head>
+<body>  
+     <div class="titleContainer">
+          <div class="title">
+            Water Quality
+          </div>    
+     </div> 
+     
+     <div class="bodyContainer">
+        <form action="predict" method="post" name="create_record">
+        <div class="text_title">
+            <h1>Add Feature</h1>
+        </div>
+        <div class="container">
+            <div class="left-column">
+              <div class="header"></div>
+              <div class="form">
+                <label for="name" class="lable">pH Value</label>
+                <input type="number" step="any" name="phvalue" class="form-field">
+
+                <label for="name" class="lable">Hardness</label>
+                <input type="number" step="any" name="hardness" class="form-field">
+
+                <label for="name" class="lable">Solids (Total dissolved solids - TDS)</label>
+                <input type="number" step="any" name="solids" class="form-field">
+
+                <label for="name" class="lable">Chloramines</label>
+                <input type="number" step="any" name="chloramines" class="form-field">
+
+                <label for="name" class="lable">Sulfate</label>
+                <input type="number" step="any" name="sulfate" class="form-field">
+              </div>
+            </div>
+            <div class="right-column">
+                <div class="form">
+                <label for="name" class="lable">Conductivity</label>
+                <input type="number" step="any" name="conductivity" class="form-field">
+
+                <label for="name" class="lable">Organic_carbon</label>
+                <input type="number" step="any" name="organic_carbon" class="form-field">
+
+                <label for="name" class="lable">Trihalomethanes</label>
+                <input type="number" step="any" name="trihalomethanes" class="form-field">
+
+                <label for="name" class="lable">Turbidity</label>
+                <input type="number" step="any" name="turbidity" class="form-field">
+                <button class="submit">PRECDICTION</button>
+                </div>
+            </div>
+        </div>
+        </form>  
+     </div>
+    
+     <div class="result">
+        <h1>Result :  </h1>
+        <h1>{{ predicted }}</h1>
+    </div>
+     <footer>
+          <div class="container">
+               <div class="left section">
+                    <div class="hcmute-ute-logo">
+                         <img src="../static/image/ute_logo_c.png" class="logo-bottom" width="100" height="100">
+                         <br>
+                         <span class="hcmute">HCMUTE</span>
+                    </div>
+                    
+                    <div class="hcmute-ute">
+                         <p>
+                              <br>
+                              TRƯỜNG ĐẠI HỌC <br>
+                              <span class="name">SƯ PHẠM KỸ THUẬT TP. HỒ CHÍ MINH</span>
+                              <hr class="hr-footer">
+                              HCMC University of Technology and Education
+                           </p>
+                    </div>
+              </div>
+              <div class="left section">
+                  <h2>About Us</h2>
+                  <div class="content">
+                      <p>
+                         Hoàng Minh Nhật - 19133042 <br>
+                         <br>
+                         Đào Thị Cẩm Tiên - 19133055 
+                      </p>
+                      <br>
+                      <a href="https://tuyensinh.hcmute.edu.vn" target="_blank" class="mr-right-10"><i
+                         class="fa-solid fa-globe"></i></a>
+                    <a href="https://www.facebook.com/nbee.nhat" target="_blank" class="mr-right-10"><i
+                         class="fa-brands fa-facebook-square"></i></a></span>
+                  </div>
+              </div>
+
+              <div class="center section">
+                  <h2>Contact Us</h2>
+                  <div class="content">
+                      <div class="place">
+                          <span class="fas fa-map-marker-alt"></span>
+                          <span class="text"> 01 Võ Văn Ngân, Linh Chiểu, Thủ Đức, TP.HCM 
+                          </span>
+                      </div>
+                      <div class="phone">
+                          <!-- <span class="fas fa-phone-alt"></span> -->
+                          <span class="fas fa-envelope"></span>
+                          <span class="text">19133042@student.hcmute.edu.vn</span>
+                      </div>
+                      <div class="email">
+                          <span class="fas fa-envelope"></span>
+                          <span class="text">19133055@student.hcmute.edu.vn</span>
+                      </div>
+                  </div>
+              </div>
+
+              
+          </div>
+
+          <div class="footer-bottom">
+              <section>
+                  <div><span>Powered By <a href="https://multiwebpress.com">© 2022 | All Rights Reserved </a></span></div>
+              </section>
+          </div>
+      </footer>
+</body>
+</html>

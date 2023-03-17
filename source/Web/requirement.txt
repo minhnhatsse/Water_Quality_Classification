@@ -1,0 +1,9 @@
+# install library
+pip install numpy
+pip install pandas
+#pip install sklearn
+pip install flask
+pip install matplotlib
+pip install seaborn
+pip install xgboost
+pip install -U scikit-learn

@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.titleContainer
+{
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    width: 100%;
+}
+.title
+{   
+    position: absolute;
+    padding-left: 35%;
+    padding-top: 36px;
+    text-align: center;
+    font-family: "Orbitron", sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: .15em;
+    color: #080815; 
+    font-weight: 900;
+}
+
+.bodyContainer {
+    width:100%;
+    height: 300px;
+    display: flex;
+    display: flex;
+    background-color: rgba(168, 187, 235, 0.795) ;
+    height: 80%;
+    border: 3px solid rgb(66, 17, 164);
+    padding-left: 100px;
+}
+.text_title
+  {   
+      position: absolute;
+      padding-left: 35%;
+      padding-top: 10px;
+      text-align: center;
+  }
+.container {
+    width:100%;
+    height: 300px;
+    display: flex;
+  }
+  
+  .left-column {
+    justify-content: center;
+    width: 50%;
+    float: right;
+  }
+  .right-column {
+    width: 50%;
+    justify-content: center;
+    float: right;
+  }
+
+  .form {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form > p {
+    text-align: right;
+  }
+  
+  .form > p > a {
+    color: #000;
+    font-size: 14px;
+  }
+  .lable{
+    font-family: "Rubik", sans-serif;
+    margin-top: 10px;
+    margin-bottom: auto;
+    color:#000; 
+  }
+  
+  .form-field {
+    height: 40px;
+    padding-left: 400px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-family: "Rubik", sans-serif;
+    outline: 0;
+    transition: 0.2s;
+    margin-top: 10px;
+  }
+  
+  .form-field:focus {
+    border-color: #0f7ef1;
+  }
+  
+  .form > button {
+    padding: 12px 100px;
+    border: 0;
+    background: linear-gradient(to right, #de48b5 0%, #0097ff 100%);
+    border-radius: 3px;
+    margin-top: 40px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-family: "Rubik", sans-serif;
+  }
+  
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*{
+    padding:0; margin:0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+footer{
+    bottom: 0;
+    width: 100%;
+    background-color: #03252d;
+}
+
+.container{
+    display: flex;
+    padding: 3rem;
+    color: #d9d9d9;
+    padding-left: 120px;
+}
+
+.container .section{
+    flex-basis: 50%;
+    padding: 0 10px;
+}
+
+.section h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.section .content{
+    margin:20px 0 0 0;
+    position: relative;
+}
+
+.section .content::before{
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+}
+
+.section .content::after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    background-color: #dd5f24;
+    top: -10px;
+}
+
+.left .content .social{
+    margin: 20px 0 0 0;
+}
+
+.left .content .social a{
+    padding: 0 2px;
+}
+
+.left .content .social a span{
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 50px;
+    transition: 0.4s;
+    border:1px solid #656565;
+}
+
+
+.left .content .social a span:hover{
+    background: #dd5f24;
+}
+
+.center .content .fas{
+    font-size: 1.1rem;
+    background: transparent;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50px;
+    transition: 0.3s;
+    cursor: pointer;
+    border:1px solid #656565;
+}
+
+.center .content .fas:hover{
+    background: #dd5f24;
+    border:1px solid #dd5f24;
+}
+
+.center .content .text{
+    font-size: 1.0.6rem;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.center .content .phone{
+    margin: 15px 0;
+}
+
+.footer-bottom section{
+    padding: 5px;
+    font-size: 0.9375rem;
+    text-align: center;
+    background: #151515;
+    color:#d9d9d9;
+
+}
+
+.footer-bottom section span{
+    color: #656565;
+}
+
+.footer-bottom section a{
+    text-decoration: none;
+    color:#d9d9d9;
+}
+
+.footer-bottom section a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width:400px){
+    footer{
+        position: relative;
+        bottom: 0px;
+    }
+
+    .left .content{
+        padding-right:0px;
+        padding-bottom: 30px;
+    }
+
+    .container{
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding:0.5rem;
+    }
+
+    .container .section{
+        margin:5px 0;
+    }
+}
+.hcmute-ute-logo{
+    margin-left: 14px;
+    float: left;
+}
+.hcmute-ute{
+    float: left;
+    margin-left: 20px;
+}
+.hcmute{
+    font-size: 17px;
+    font-weight: 600;
+    margin-left: 11px;
+}
+.hr-footer{
+    width: 200px;
+}
+.name{
+    font-size: 19px;
+    font-weight: 600;
+}
+.result{
+    width:100%;
+    height: 150px;
+    display: flex;
+    display: flex;
+    background-color: rgba(168, 187, 235, 0.795) ;
+    border: 3px solid rgb(66, 17, 164);
+    padding-top: 50px;
+    padding-left: 650px;
+}
+.submit:hover{
+    color:red;
+    font-style:normal;
+    background: #656565;
+}
+
+.field{
+    padding-left: 600px;
+    padding-top: 20px;
+}
